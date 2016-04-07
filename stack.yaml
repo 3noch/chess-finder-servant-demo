@@ -1,0 +1,20 @@
+flags: {}
+packages:
+- '.'
+- shared
+- location:
+    git: git@github.com:haskell-servant/servant.git
+    commit: 56c13eeae945db7d81b190e0b808df8ec8eda746
+  subdirs:
+  - servant
+  - servant-client
+  - servant-server
+  - servant-lucid
+  extra-dep: true
+
+resolver: lts-5.11
+extra-deps:
+#- servant-0.6
+#- servant-client-0.6
+#- servant-server-0.6
+- string-conv-0.1

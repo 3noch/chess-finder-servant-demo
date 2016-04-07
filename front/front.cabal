@@ -1,0 +1,43 @@
+Name: front
+Version: 0.1
+Synopsis: Front-end web app for chess-finder
+Description:
+Author: Elliot Cameron
+Maintainer: eacameron@gmail.com
+Stability: Experimental
+Category: Web
+Build-type: Simple
+Cabal-version: >=1.10
+
+executable front
+  hs-source-dirs: src
+  other-modules: Cookies, Html
+  main-is: Main.hs
+  build-depends:
+    base,
+    blaze-builder,
+    bytestring,
+    chess-finder-shared,
+    cookie,
+    containers,
+    ghcjs-base,
+    ghcjs-dom == 0.2.*,
+    lens,
+    reflex == 0.4.*,
+    reflex-dom == 0.3.*,
+    reflex-dom-contrib,
+    servant,
+    servant-reflex,
+    string-conv == 0.1.*,
+    text,
+    transformers,
+    mtl
+  other-extensions: TemplateHaskell
+  default-language: Haskell2010
+  default-extensions: OverloadedLists,
+                      OverloadedStrings,
+                      RecordWildCards,
+                      ScopedTypeVariables,
+                      StandaloneDeriving,
+                      TypeOperators
+  ghc-options:  -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2

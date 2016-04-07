@@ -1,0 +1,30 @@
+packages:
+- '.'
+- '../shared'
+- location: servant-reflex
+  extra-dep: True
+
+resolver: lts-3.6
+compiler: ghcjs-0.2.0.20160406_ghc-7.10.2
+compiler-check: match-exact
+setup-info:
+  ghcjs:
+    source:
+      ghcjs-0.2.0.20160406_ghc-7.10.2:
+        url: "http://ghcjs.luite.com/master-20160406.tar.gz"
+
+extra-deps:
+  - base-compat-0.9.0
+  - dependent-map-0.2.1.0
+  - dependent-sum-0.3.2.1
+  - ghcjs-dom-0.2.3.1
+  - http-api-data-0.2.2
+  - readable-0.3.1
+  - ref-tf-0.4
+  - reflex-0.4.0
+  - reflex-dom-0.3
+  - reflex-dom-contrib-0.4.1
+  - servant-0.6
+  - servant-lucid-0.6
+  - string-conv-0.1
+  - these-0.6.2.1
