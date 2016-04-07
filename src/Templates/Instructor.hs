@@ -16,8 +16,8 @@ instructorPage int = doctypehtml_ $ do
 
   body_ $
     section_ [class_ "section"] $
-      div_ [class_ "container"] $
+      div_ [class_ "container"] $ do
         div_ [class_ "heading"] $ do
           h1_ [class_ "title"] "Instructor Info"
-          h2_ [class_ "subtitle"] "Instructor " >> toHtml (show int)
-          p_ "I don't know anything about him."
+          h2_ [class_ "subtitle"] ("Instructor " >> toHtml (show int))
+        p_ "I don't know anything about him."

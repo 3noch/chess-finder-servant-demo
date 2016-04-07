@@ -50,7 +50,7 @@ getListings True (Just lat) (Just long) = do
     getDistanceMatrix httpClientManager [origin] (listingLocation <$> fakeListings)
 
   case response of
-    Left _ -> throwError err504
+    Left err -> liftIO (print err) >> throwError err504
     Right distanceMap -> do
       let combine listing distance = Geocontext listing (cell_text . elem_duration $ distance)
 

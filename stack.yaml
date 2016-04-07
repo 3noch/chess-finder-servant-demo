@@ -4,7 +4,7 @@ packages:
 - shared
 - location:
     git: git@github.com:haskell-servant/servant.git
-    commit: 56c13eeae945db7d81b190e0b808df8ec8eda746
+    commit: 8bf81190b2ff8581d7dad028bb48f3600f3e1eaa
   subdirs:
   - servant
   - servant-client
